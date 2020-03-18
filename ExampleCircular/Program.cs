@@ -74,6 +74,11 @@ namespace ExampleCircular
                     {
                         Console.WriteLine("streaming start failed");
                     }
+
+                    GenDataStartRequest req = new GenDataStartRequest();
+                    req.AccessToken = "token";
+                    req.Serial = "000000019";
+                    client.Send(req);
                 });
             registry.Add(new Ping(), Ping.Parser, (int)PacketType.Ping, (IMessage message) =>
             {
@@ -92,6 +97,18 @@ namespace ExampleCircular
                 {
                     //VideoFrame videoFrame = (VideoFrame)message;
                     //Console.WriteLine("VideoFrame. uts=" + videoFrame.UtsMs);
+                });
+            registry.Add(new GenData(), GenData.Parser, (int)PacketType.GenData,
+                (IMessage message) =>
+                {
+                    GenData data = (GenData)message;
+                    Console.WriteLine("GenData() called" + data.ToString());
+                });
+            registry.Add(new GenDataStartRequest(), GenDataStartRequest.Parser, (int)PacketType.GenDataStartRequest, null);
+            registry.Add(new GenDataStartResponse(), GenDataStartResponse.Parser, (int)PacketType.GenDataStartResponse,
+                (IMessage message) =>
+                {
+                    GenDataStartResponse res = (GenDataStartResponse)message;
                 });
 
             while (true)
