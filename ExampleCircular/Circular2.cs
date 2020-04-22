@@ -26,102 +26,108 @@ namespace Circular2 {
           string.Concat(
             "Cg9jaXJjdWxhcjIucHJvdG8SCWNpcmN1bGFyMiIGCgRQaW5nIiUKE1JlZ2lz",
             "dHJhdGlvblN0YXRpb24SDgoGc2VyaWFsGAEgASgJIiYKCFRpbWVsaW5lEg0K",
-            "BXN0YXJ0GAEgASgEEgsKA2VuZBgCIAEoBCKPAQoOVmlkZW9Jbml0RnJhbWUS",
+            "BXN0YXJ0GAEgASgEEgsKA2VuZBgCIAEoBCKfAQoOVmlkZW9Jbml0RnJhbWUS",
             "DQoFd2lkdGgYASABKA0SDgoGaGVpZ2h0GAIgASgNEhYKDmZyYW1lUGVyU2Vj",
             "b25kGAMgASgNEg4KBnNwc3BwcxgEIAEoDBIOCgZ1dHNfbXMYBSABKAQSJgoJ",
-            "dGltZWxpbmVzGAYgAygLMhMuY2lyY3VsYXIyLlRpbWVsaW5lIisKClZpZGVv",
-            "RnJhbWUSDQoFZnJhbWUYASABKAwSDgoGdXRzX21zGAIgASgEIp0ICgdHZW5E",
-            "YXRhEg4KBnNlcmlhbBgBIAEoCRIXCg9iYXR0ZXJ5Q2FwYWNpdHkYAiABKAIS",
-            "HQoVYmF0dGVyeUxvd1ZvbHRhZ2VTYWZlGAMgASgCEi4KJndpbmRTdGFydEJh",
-            "dHRlcnlWb2x0YWdlQWZ0ZXJGdWxsQ2hhcmdlGAQgASgCEhgKEG51bU9mV2lu",
-            "ZEdlblBvbGUYBSABKAUSJAocZHVtbXlMb2FkQnJha2luZ0FwcGx5Vm9sdGFn",
-            "ZRgGIAEoAhIkChxkdW1teUxvYWRCcmFraW5nQ2xlYXJWb2x0YWdlGAcgASgC",
-            "EiAKGHNob3J0QnJha2luZ0FwcGx5Vm9sdGFnZRgIIAEoAhIgChhzaG9ydEJy",
-            "YWtpbmdDbGVhclZvbHRhZ2UYCSABKAISIAoYZHVtbXlMb2FkQnJha2luZ0Fw",
-            "cGx5UnBtGAogASgCEiAKGGR1bW15TG9hZEJyYWtpbmdDbGVhclJwbRgLIAEo",
-            "AhIgChhsaW5lU2hvcnRCcmFraW5nQXBwbHlScG0YDCABKAISIAoYbGluZVNo",
-            "b3J0QnJha2luZ0NsZWFyUnBtGA0gASgCEhcKD0xlZDFPbkNvbmRpdGlvbhgO",
-            "IAEoAhIYChBMZWQxT2ZmQ29uZGl0aW9uGA8gASgCEhcKD0xlZDJPbkNvbmRp",
-            "dGlvbhgQIAEoAhIYChBMZWQyT2ZmQ29uZGl0aW9uGBEgASgCEhcKD0xlZDFP",
-            "bk9mZk1ldGhvZBgSIAEoBRIXCg9MZWQyT25PZmZNZXRob2QYEyABKAUSFQoN",
-            "TGVkMU1heE9uVGltZRgUIAEoBRIVCg1MZWQyTWF4T25UaW1lGBUgASgFEhUK",
-            "DWJhdHRlcnlBbXBhcmUYFiABKAISFgoOYmF0dGVyeVZvbHRhZ2UYFyABKAIS",
-            "FgoOd2luZEdlblZvbHRhZ2UYGCABKAISFQoNd2luZEdlbkFtcGFyZRgZIAEo",
-            "AhIRCglwdlZvbHRhZ2UYGiABKAISEAoIcHZBbXBhcmUYGyABKAISEQoJd2lu",
-            "ZFBvd2VyGBwgASgCEg8KB3B2UG93ZXIYHSABKAISEwoLTGVkMVZvbHRhZ2UY",
-            "HiABKAISEgoKTGVkMUFtcGFyZRgfIAEoAhITCgtMZWQyVm9sdGFnZRggIAEo",
-            "AhISCgpMZWQyQW1wYXJlGCEgASgCEhIKCkxlZDFPblRpbWUYIiABKAUSEgoK",
-            "TGVkMk9uVGltZRgjIAEoBRIWCg5kdW1teUxvYWRCcmFrZRgkIAEoBRIWCg5s",
-            "aW5lU2hvcnRCcmFrZRglIAEoBRIRCglzdGF0dXNCaXQYJiABKAUSHwoXYmF0",
-            "dGVyeUNoYXJnZVdpbmRBbXBhcmUYJyABKAISHQoVYmF0dGVyeUNoYXJnZVB2",
-            "QW1wYXJlGCggASgCIjoKE0dlbkRhdGFTdGFydFJlcXVlc3QSEwoLYWNjZXNz",
-            "VG9rZW4YASABKAkSDgoGc2VyaWFsGAIgASgJIl4KFEdlbkRhdGFTdGFydFJl",
-            "c3BvbnNlEiEKBnJlc3VsdBgBIAEoDjIRLmNpcmN1bGFyMi5SZXN1bHQSEwoL",
-            "YWNjZXNzVG9rZW4YAiABKAkSDgoGc2VyaWFsGAMgASgJIjkKEkdlbkRhdGFT",
-            "dG9wUmVxdWVzdBITCgthY2Nlc3NUb2tlbhgBIAEoCRIOCgZzZXJpYWwYAiAB",
-            "KAkiXQoTR2VuRGF0YVN0b3BSZXNwb25zZRIhCgZyZXN1bHQYASABKA4yES5j",
-            "aXJjdWxhcjIuUmVzdWx0EhMKC2FjY2Vzc1Rva2VuGAIgASgJEg4KBnNlcmlh",
-            "bBgDIAEoCSJ/ChpSZWdpc3RyYXRpb25TdGF0aW9uUmVxdWVzdBIOCgZzZXJp",
-            "YWwYASABKAkSCwoDbWFjGAIgASgJEhEKCXN3VmVyc2lvbhgDIAEoCRIRCglo",
-            "d1ZlcnNpb24YBCABKAkSDQoFcHJpSVAYBSABKAkSDwoHcHJpUG9ydBgGIAEo",
-            "BSJAChtSZWdpc3RyYXRpb25TdGF0aW9uUmVzcG9uc2USIQoGcmVzdWx0GAEg",
-            "ASgOMhEuY2lyY3VsYXIyLlJlc3VsdCJeChlSZWdpc3RyYXRpb25WaWV3ZXJS",
-            "ZXF1ZXN0Eg4KBnNlcmlhbBgBIAEoCRIRCglzd1ZlcnNpb24YAiABKAkSDQoF",
-            "cHJpSVAYAyABKAkSDwoHcHJpUG9ydBgEIAEoBSI/ChpSZWdpc3RyYXRpb25W",
-            "aWV3ZXJSZXNwb25zZRIhCgZyZXN1bHQYASABKA4yES5jaXJjdWxhcjIuUmVz",
-            "dWx0IkkKFVN0cmVhbWluZ1N0YXJ0UmVxdWVzdBITCgthY2Nlc3NUb2tlbhgB",
-            "IAEoCRIOCgZzZXJpYWwYAiABKAkSCwoDdXRzGAMgASgEIlgKFlN0cmVhbWlu",
-            "Z1N0YXJ0UmVzcG9uc2USIQoGcmVzdWx0GAEgASgOMhEuY2lyY3VsYXIyLlJl",
-            "c3VsdBIOCgZzZXJpYWwYAiABKAkSCwoDdXRzGAMgASgEIjsKFFN0cmVhbWlu",
-            "Z1N0b3BSZXF1ZXN0EhMKC2FjY2Vzc1Rva2VuGAEgASgJEg4KBnNlcmlhbBgC",
-            "IAEoCSJKChVTdHJlYW1pbmdTdG9wUmVzcG9uc2USIQoGcmVzdWx0GAEgASgO",
-            "MhEuY2lyY3VsYXIyLlJlc3VsdBIOCgZzZXJpYWwYAiABKAkiDQoLVmlkZW9C",
-            "cm9rZW4iPAoLQXV0aFN0YXRpb24SDAoEbmFtZRgBIAEoCBIPCgdzaGFyaW5n",
-            "GAIgASgIEg4KBnVwZGF0ZRgDIAEoCCKQAgoHU3RhdGlvbhIMCgRuYW1lGAEg",
-            "ASgJEgsKA21hYxgCIAEoCRINCgVvd25lchgDIAEoCRIQCghwdWJsaWNJUBgE",
-            "IAEoCRISCgpwdWJsaWNQb3J0GAUgASgFEhEKCXByaXZhdGVJUBgGIAEoCRIT",
-            "Cgtwcml2YXRlUG9ydBgHIAEoBRIMCgRwaW5nGAggASgNEg8KB3JlZ0RhdGUY",
-            "CSABKAkSEQoJc3dWZXJzaW9uGAogASgJEhEKCWh3VmVyc2lvbhgLIAEoCRIS",
-            "CgpjYW1lcmFOYW1lGAwgASgJEg4KBnNlcmlhbBgNIAEoCRIkCgRhdXRoGA4g",
-            "ASgLMhYuY2lyY3VsYXIyLkF1dGhTdGF0aW9uIikKElN0YXRpb25MaXN0UmVx",
-            "dWVzdBITCgthY2Nlc3NUb2tlbhgBIAEoCSJhChNTdGF0aW9uTGlzdFJlc3Bv",
-            "bnNlEiEKBnJlc3VsdBgBIAEoDjIRLmNpcmN1bGFyMi5SZXN1bHQSJwoLc3Rh",
-            "dGlvbkxpc3QYAiADKAsyEi5jaXJjdWxhcjIuU3RhdGlvbiJGChFBZGRTdGF0",
-            "aW9uUmVxdWVzdBITCgthY2Nlc3NUb2tlbhgBIAEoCRIOCgZzZXJpYWwYAiAB",
-            "KAkSDAoEYXV0aBgDIAEoCSJHChJBZGRTdGF0aW9uUmVzcG9uc2USIQoGcmVz",
-            "dWx0GAEgASgOMhEuY2lyY3VsYXIyLlJlc3VsdBIOCgZzZXJpYWwYAiABKAki",
-            "cAoTU2hhcmVTdGF0aW9uUmVxdWVzdBITCgthY2Nlc3NUb2tlbhgBIAEoCRIO",
-            "CgZzZXJpYWwYAiABKAkSDgoGdXNlcklEGAMgASgJEiQKBGF1dGgYBCABKAsy",
-            "Fi5jaXJjdWxhcjIuQXV0aFN0YXRpb24iWQoUU2hhcmVTdGF0aW9uUmVzcG9u",
+            "dGltZWxpbmVzGAYgAygLMhMuY2lyY3VsYXIyLlRpbWVsaW5lEg4KBnNlcmlh",
+            "bBgHIAEoCSI7CgpWaWRlb0ZyYW1lEg0KBWZyYW1lGAEgASgMEg4KBnV0c19t",
+            "cxgCIAEoBBIOCgZzZXJpYWwYAyABKAkinQgKB0dlbkRhdGESDgoGc2VyaWFs",
+            "GAEgASgJEhcKD2JhdHRlcnlDYXBhY2l0eRgCIAEoAhIdChViYXR0ZXJ5TG93",
+            "Vm9sdGFnZVNhZmUYAyABKAISLgomd2luZFN0YXJ0QmF0dGVyeVZvbHRhZ2VB",
+            "ZnRlckZ1bGxDaGFyZ2UYBCABKAISGAoQbnVtT2ZXaW5kR2VuUG9sZRgFIAEo",
+            "BRIkChxkdW1teUxvYWRCcmFraW5nQXBwbHlWb2x0YWdlGAYgASgCEiQKHGR1",
+            "bW15TG9hZEJyYWtpbmdDbGVhclZvbHRhZ2UYByABKAISIAoYc2hvcnRCcmFr",
+            "aW5nQXBwbHlWb2x0YWdlGAggASgCEiAKGHNob3J0QnJha2luZ0NsZWFyVm9s",
+            "dGFnZRgJIAEoAhIgChhkdW1teUxvYWRCcmFraW5nQXBwbHlScG0YCiABKAIS",
+            "IAoYZHVtbXlMb2FkQnJha2luZ0NsZWFyUnBtGAsgASgCEiAKGGxpbmVTaG9y",
+            "dEJyYWtpbmdBcHBseVJwbRgMIAEoAhIgChhsaW5lU2hvcnRCcmFraW5nQ2xl",
+            "YXJScG0YDSABKAISFwoPTGVkMU9uQ29uZGl0aW9uGA4gASgCEhgKEExlZDFP",
+            "ZmZDb25kaXRpb24YDyABKAISFwoPTGVkMk9uQ29uZGl0aW9uGBAgASgCEhgK",
+            "EExlZDJPZmZDb25kaXRpb24YESABKAISFwoPTGVkMU9uT2ZmTWV0aG9kGBIg",
+            "ASgFEhcKD0xlZDJPbk9mZk1ldGhvZBgTIAEoBRIVCg1MZWQxTWF4T25UaW1l",
+            "GBQgASgFEhUKDUxlZDJNYXhPblRpbWUYFSABKAUSFQoNYmF0dGVyeUFtcGFy",
+            "ZRgWIAEoAhIWCg5iYXR0ZXJ5Vm9sdGFnZRgXIAEoAhIWCg53aW5kR2VuVm9s",
+            "dGFnZRgYIAEoAhIVCg13aW5kR2VuQW1wYXJlGBkgASgCEhEKCXB2Vm9sdGFn",
+            "ZRgaIAEoAhIQCghwdkFtcGFyZRgbIAEoAhIRCgl3aW5kUG93ZXIYHCABKAIS",
+            "DwoHcHZQb3dlchgdIAEoAhITCgtMZWQxVm9sdGFnZRgeIAEoAhISCgpMZWQx",
+            "QW1wYXJlGB8gASgCEhMKC0xlZDJWb2x0YWdlGCAgASgCEhIKCkxlZDJBbXBh",
+            "cmUYISABKAISEgoKTGVkMU9uVGltZRgiIAEoBRISCgpMZWQyT25UaW1lGCMg",
+            "ASgFEhYKDmR1bW15TG9hZEJyYWtlGCQgASgFEhYKDmxpbmVTaG9ydEJyYWtl",
+            "GCUgASgFEhEKCXN0YXR1c0JpdBgmIAEoBRIfChdiYXR0ZXJ5Q2hhcmdlV2lu",
+            "ZEFtcGFyZRgnIAEoAhIdChViYXR0ZXJ5Q2hhcmdlUHZBbXBhcmUYKCABKAIi",
+            "OgoTR2VuRGF0YVN0YXJ0UmVxdWVzdBITCgthY2Nlc3NUb2tlbhgBIAEoCRIO",
+            "CgZzZXJpYWwYAiABKAkiXgoUR2VuRGF0YVN0YXJ0UmVzcG9uc2USIQoGcmVz",
+            "dWx0GAEgASgOMhEuY2lyY3VsYXIyLlJlc3VsdBITCgthY2Nlc3NUb2tlbhgC",
+            "IAEoCRIOCgZzZXJpYWwYAyABKAkiOQoSR2VuRGF0YVN0b3BSZXF1ZXN0EhMK",
+            "C2FjY2Vzc1Rva2VuGAEgASgJEg4KBnNlcmlhbBgCIAEoCSJdChNHZW5EYXRh",
+            "U3RvcFJlc3BvbnNlEiEKBnJlc3VsdBgBIAEoDjIRLmNpcmN1bGFyMi5SZXN1",
+            "bHQSEwoLYWNjZXNzVG9rZW4YAiABKAkSDgoGc2VyaWFsGAMgASgJIn8KGlJl",
+            "Z2lzdHJhdGlvblN0YXRpb25SZXF1ZXN0Eg4KBnNlcmlhbBgBIAEoCRILCgNt",
+            "YWMYAiABKAkSEQoJc3dWZXJzaW9uGAMgASgJEhEKCWh3VmVyc2lvbhgEIAEo",
+            "CRINCgVwcmlJUBgFIAEoCRIPCgdwcmlQb3J0GAYgASgFIkAKG1JlZ2lzdHJh",
+            "dGlvblN0YXRpb25SZXNwb25zZRIhCgZyZXN1bHQYASABKA4yES5jaXJjdWxh",
+            "cjIuUmVzdWx0Il4KGVJlZ2lzdHJhdGlvblZpZXdlclJlcXVlc3QSDgoGc2Vy",
+            "aWFsGAEgASgJEhEKCXN3VmVyc2lvbhgCIAEoCRINCgVwcmlJUBgDIAEoCRIP",
+            "CgdwcmlQb3J0GAQgASgFIj8KGlJlZ2lzdHJhdGlvblZpZXdlclJlc3BvbnNl",
+            "EiEKBnJlc3VsdBgBIAEoDjIRLmNpcmN1bGFyMi5SZXN1bHQiSQoVU3RyZWFt",
+            "aW5nU3RhcnRSZXF1ZXN0EhMKC2FjY2Vzc1Rva2VuGAEgASgJEg4KBnNlcmlh",
+            "bBgCIAEoCRILCgN1dHMYAyABKAQigAEKFlN0cmVhbWluZ1N0YXJ0UmVzcG9u",
             "c2USIQoGcmVzdWx0GAEgASgOMhEuY2lyY3VsYXIyLlJlc3VsdBIOCgZzZXJp",
-            "YWwYAiABKAkSDgoGdXNlcklEGAMgASgJKsEECgpQYWNrZXRUeXBlEggKBHBp",
-            "bmcQABISCg52aWRlb0luaXRGcmFtZRABEg4KCnZpZGVvRnJhbWUQAhIZChVz",
-            "dHJlYW1pbmdTdGFydFJlcXVlc3QQAxIaChZzdHJlYW1pbmdTdGFydFJlc3Bv",
-            "bnNlEAQSGAoUc3RyZWFtaW5nU3RvcFJlcXVlc3QQBRIZChVzdHJlYW1pbmdT",
-            "dG9wUmVzcG9uc2UQBhIPCgt2aWRlb0Jyb2tlbhAHEgsKB2dlbkRhdGEQZBIX",
-            "ChNnZW5EYXRhU3RhcnRSZXF1ZXN0EGUSGAoUZ2VuRGF0YVN0YXJ0UmVzcG9u",
-            "c2UQZhIWChJnZW5EYXRhU3RvcFJlcXVlc3QQZxIXChNnZW5EYXRhU3RvcFJl",
-            "c3BvbnNlEGgSHgoacmVnaXN0cmF0aW9uU3RhdGlvblJlcXVlc3QQaRIfChty",
-            "ZWdpc3RyYXRpb25TdGF0aW9uUmVzcG9uc2UQahIdChlyZWdpc3RyYXRpb25W",
-            "aWV3ZXJSZXF1ZXN0EGsSHgoacmVnaXN0cmF0aW9uVmlld2VyUmVzcG9uc2UQ",
-            "bBIXChJzdGF0aW9uTGlzdFJlcXVlc3QQlgESGAoTc3RhdGlvbkxpc3RSZXNw",
-            "b25zZRCXARIWChFhZGRTdGF0aW9uUmVxdWVzdBCYARIXChJhZGRTdGF0aW9u",
-            "UmVzcG9uc2UQmQESGAoTc2hhcmVTdGF0aW9uUmVxdWVzdBCaARIZChRzaGFy",
-            "ZVN0YXRpb25SZXNwb25zZRCbASqnAQoGUmVzdWx0EgsKB3N1Y2Nlc3MQABIQ",
-            "CgxleHBpcmVkVG9rZW4QARIQCgx1bmF1dGhvcml6ZWQQAhIQCgx1c2VyTm90",
-            "RXhpc3QQAxISCg5hbHJlYWR5U3RhcnRlZBAKEhIKDmFscmVhZHlTdG9wcGVk",
-            "EAsSEAoMZGF0YU5vdEZvdW5kEAwSFAoQYWxyZWFkeUV4aXN0VXNlchAUEgoK",
-            "BmZhaWxlZBBkKjMKCkRldmljZVR5cGUSCAoEbm9uZRAAEgoKBnZpZXdlchAB",
-            "Eg8KC2lvdF9zdGF0aW9uEAJCFgoJbmV0Lmlqb29uQglDaXJjdWxhcjJiBnBy",
-            "b3RvMw=="));
+            "YWwYAiABKAkSCwoDdXRzGAMgASgEEiYKCXRpbWVsaW5lcxgEIAMoCzITLmNp",
+            "cmN1bGFyMi5UaW1lbGluZSI7ChRTdHJlYW1pbmdTdG9wUmVxdWVzdBITCgth",
+            "Y2Nlc3NUb2tlbhgBIAEoCRIOCgZzZXJpYWwYAiABKAkiSgoVU3RyZWFtaW5n",
+            "U3RvcFJlc3BvbnNlEiEKBnJlc3VsdBgBIAEoDjIRLmNpcmN1bGFyMi5SZXN1",
+            "bHQSDgoGc2VyaWFsGAIgASgJIh0KC1ZpZGVvQnJva2VuEg4KBnNlcmlhbBgB",
+            "IAEoCSI8CgtBdXRoU3RhdGlvbhIMCgRuYW1lGAEgASgIEg8KB3NoYXJpbmcY",
+            "AiABKAgSDgoGdXBkYXRlGAMgASgIIqACCgdTdGF0aW9uEgwKBG5hbWUYASAB",
+            "KAkSCwoDbWFjGAIgASgJEg0KBW93bmVyGAMgASgJEhAKCHB1YmxpY0lQGAQg",
+            "ASgJEhIKCnB1YmxpY1BvcnQYBSABKAUSEQoJcHJpdmF0ZUlQGAYgASgJEhMK",
+            "C3ByaXZhdGVQb3J0GAcgASgFEgwKBHBpbmcYCCABKA0SDwoHcmVnRGF0ZRgJ",
+            "IAEoCRIRCglzd1ZlcnNpb24YCiABKAkSEQoJaHdWZXJzaW9uGAsgASgJEhIK",
+            "CmNhbWVyYU5hbWUYDCABKAkSDgoGc2VyaWFsGA0gASgJEiQKBGF1dGgYDiAB",
+            "KAsyFi5jaXJjdWxhcjIuQXV0aFN0YXRpb24SDgoGb25saW5lGA8gASgIIikK",
+            "ElN0YXRpb25MaXN0UmVxdWVzdBITCgthY2Nlc3NUb2tlbhgBIAEoCSJhChNT",
+            "dGF0aW9uTGlzdFJlc3BvbnNlEiEKBnJlc3VsdBgBIAEoDjIRLmNpcmN1bGFy",
+            "Mi5SZXN1bHQSJwoLc3RhdGlvbkxpc3QYAiADKAsyEi5jaXJjdWxhcjIuU3Rh",
+            "dGlvbiI1Cg5TdGF0aW9uUmVxdWVzdBITCgthY2Nlc3NUb2tlbhgBIAEoCRIO",
+            "CgZzZXJpYWwYAiABKAkiWQoPU3RhdGlvblJlc3BvbnNlEiEKBnJlc3VsdBgB",
+            "IAEoDjIRLmNpcmN1bGFyMi5SZXN1bHQSIwoHc3RhdGlvbhgCIAEoCzISLmNp",
+            "cmN1bGFyMi5TdGF0aW9uIkYKEUFkZFN0YXRpb25SZXF1ZXN0EhMKC2FjY2Vz",
+            "c1Rva2VuGAEgASgJEg4KBnNlcmlhbBgCIAEoCRIMCgRhdXRoGAMgASgJIkcK",
+            "EkFkZFN0YXRpb25SZXNwb25zZRIhCgZyZXN1bHQYASABKA4yES5jaXJjdWxh",
+            "cjIuUmVzdWx0Eg4KBnNlcmlhbBgCIAEoCSJwChNTaGFyZVN0YXRpb25SZXF1",
+            "ZXN0EhMKC2FjY2Vzc1Rva2VuGAEgASgJEg4KBnNlcmlhbBgCIAEoCRIOCgZ1",
+            "c2VySUQYAyABKAkSJAoEYXV0aBgEIAEoCzIWLmNpcmN1bGFyMi5BdXRoU3Rh",
+            "dGlvbiJZChRTaGFyZVN0YXRpb25SZXNwb25zZRIhCgZyZXN1bHQYASABKA4y",
+            "ES5jaXJjdWxhcjIuUmVzdWx0Eg4KBnNlcmlhbBgCIAEoCRIOCgZ1c2VySUQY",
+            "AyABKAkq7AQKClBhY2tldFR5cGUSCAoEcGluZxAAEhIKDnZpZGVvSW5pdEZy",
+            "YW1lEAESDgoKdmlkZW9GcmFtZRACEhkKFXN0cmVhbWluZ1N0YXJ0UmVxdWVz",
+            "dBADEhoKFnN0cmVhbWluZ1N0YXJ0UmVzcG9uc2UQBBIYChRzdHJlYW1pbmdT",
+            "dG9wUmVxdWVzdBAFEhkKFXN0cmVhbWluZ1N0b3BSZXNwb25zZRAGEg8KC3Zp",
+            "ZGVvQnJva2VuEAcSCwoHZ2VuRGF0YRBkEhcKE2dlbkRhdGFTdGFydFJlcXVl",
+            "c3QQZRIYChRnZW5EYXRhU3RhcnRSZXNwb25zZRBmEhYKEmdlbkRhdGFTdG9w",
+            "UmVxdWVzdBBnEhcKE2dlbkRhdGFTdG9wUmVzcG9uc2UQaBIeChpyZWdpc3Ry",
+            "YXRpb25TdGF0aW9uUmVxdWVzdBBpEh8KG3JlZ2lzdHJhdGlvblN0YXRpb25S",
+            "ZXNwb25zZRBqEh0KGXJlZ2lzdHJhdGlvblZpZXdlclJlcXVlc3QQaxIeChpy",
+            "ZWdpc3RyYXRpb25WaWV3ZXJSZXNwb25zZRBsEhcKEnN0YXRpb25MaXN0UmVx",
+            "dWVzdBCWARIYChNzdGF0aW9uTGlzdFJlc3BvbnNlEJcBEhYKEWFkZFN0YXRp",
+            "b25SZXF1ZXN0EJgBEhcKEmFkZFN0YXRpb25SZXNwb25zZRCZARIYChNzaGFy",
+            "ZVN0YXRpb25SZXF1ZXN0EJoBEhkKFHNoYXJlU3RhdGlvblJlc3BvbnNlEJsB",
+            "EhMKDnN0YXRpb25SZXF1ZXN0EJwBEhQKD3N0YXRpb25SZXNwb25zZRCdASqn",
+            "AQoGUmVzdWx0EgsKB3N1Y2Nlc3MQABIQCgxleHBpcmVkVG9rZW4QARIQCgx1",
+            "bmF1dGhvcml6ZWQQAhIQCgx1c2VyTm90RXhpc3QQAxISCg5hbHJlYWR5U3Rh",
+            "cnRlZBAKEhIKDmFscmVhZHlTdG9wcGVkEAsSEAoMZGF0YU5vdEZvdW5kEAwS",
+            "FAoQYWxyZWFkeUV4aXN0VXNlchAUEgoKBmZhaWxlZBBkKjMKCkRldmljZVR5",
+            "cGUSCAoEbm9uZRAAEgoKBnZpZXdlchABEg8KC2lvdF9zdGF0aW9uEAJCFgoJ",
+            "bmV0Lmlqb29uQglDaXJjdWxhcjJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Circular2.PacketType), typeof(global::Circular2.Result), typeof(global::Circular2.DeviceType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.Ping), global::Circular2.Ping.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.RegistrationStation), global::Circular2.RegistrationStation.Parser, new[]{ "Serial" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.Timeline), global::Circular2.Timeline.Parser, new[]{ "Start", "End" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.VideoInitFrame), global::Circular2.VideoInitFrame.Parser, new[]{ "Width", "Height", "FramePerSecond", "Spspps", "UtsMs", "Timelines" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.VideoFrame), global::Circular2.VideoFrame.Parser, new[]{ "Frame", "UtsMs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.VideoInitFrame), global::Circular2.VideoInitFrame.Parser, new[]{ "Width", "Height", "FramePerSecond", "Spspps", "UtsMs", "Timelines", "Serial" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.VideoFrame), global::Circular2.VideoFrame.Parser, new[]{ "Frame", "UtsMs", "Serial" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.GenData), global::Circular2.GenData.Parser, new[]{ "Serial", "BatteryCapacity", "BatteryLowVoltageSafe", "WindStartBatteryVoltageAfterFullCharge", "NumOfWindGenPole", "DummyLoadBrakingApplyVoltage", "DummyLoadBrakingClearVoltage", "ShortBrakingApplyVoltage", "ShortBrakingClearVoltage", "DummyLoadBrakingApplyRpm", "DummyLoadBrakingClearRpm", "LineShortBrakingApplyRpm", "LineShortBrakingClearRpm", "Led1OnCondition", "Led1OffCondition", "Led2OnCondition", "Led2OffCondition", "Led1OnOffMethod", "Led2OnOffMethod", "Led1MaxOnTime", "Led2MaxOnTime", "BatteryAmpare", "BatteryVoltage", "WindGenVoltage", "WindGenAmpare", "PvVoltage", "PvAmpare", "WindPower", "PvPower", "Led1Voltage", "Led1Ampare", "Led2Voltage", "Led2Ampare", "Led1OnTime", "Led2OnTime", "DummyLoadBrake", "LineShortBrake", "StatusBit", "BatteryChargeWindAmpare", "BatteryChargePvAmpare" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.GenDataStartRequest), global::Circular2.GenDataStartRequest.Parser, new[]{ "AccessToken", "Serial" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.GenDataStartResponse), global::Circular2.GenDataStartResponse.Parser, new[]{ "Result", "AccessToken", "Serial" }, null, null, null, null),
@@ -132,14 +138,16 @@ namespace Circular2 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.RegistrationViewerRequest), global::Circular2.RegistrationViewerRequest.Parser, new[]{ "Serial", "SwVersion", "PriIP", "PriPort" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.RegistrationViewerResponse), global::Circular2.RegistrationViewerResponse.Parser, new[]{ "Result" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.StreamingStartRequest), global::Circular2.StreamingStartRequest.Parser, new[]{ "AccessToken", "Serial", "Uts" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.StreamingStartResponse), global::Circular2.StreamingStartResponse.Parser, new[]{ "Result", "Serial", "Uts" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.StreamingStartResponse), global::Circular2.StreamingStartResponse.Parser, new[]{ "Result", "Serial", "Uts", "Timelines" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.StreamingStopRequest), global::Circular2.StreamingStopRequest.Parser, new[]{ "AccessToken", "Serial" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.StreamingStopResponse), global::Circular2.StreamingStopResponse.Parser, new[]{ "Result", "Serial" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.VideoBroken), global::Circular2.VideoBroken.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.VideoBroken), global::Circular2.VideoBroken.Parser, new[]{ "Serial" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.AuthStation), global::Circular2.AuthStation.Parser, new[]{ "Name", "Sharing", "Update" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.Station), global::Circular2.Station.Parser, new[]{ "Name", "Mac", "Owner", "PublicIP", "PublicPort", "PrivateIP", "PrivatePort", "Ping", "RegDate", "SwVersion", "HwVersion", "CameraName", "Serial", "Auth" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.Station), global::Circular2.Station.Parser, new[]{ "Name", "Mac", "Owner", "PublicIP", "PublicPort", "PrivateIP", "PrivatePort", "Ping", "RegDate", "SwVersion", "HwVersion", "CameraName", "Serial", "Auth", "Online" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.StationListRequest), global::Circular2.StationListRequest.Parser, new[]{ "AccessToken" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.StationListResponse), global::Circular2.StationListResponse.Parser, new[]{ "Result", "StationList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.StationRequest), global::Circular2.StationRequest.Parser, new[]{ "AccessToken", "Serial" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.StationResponse), global::Circular2.StationResponse.Parser, new[]{ "Result", "Station" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.AddStationRequest), global::Circular2.AddStationRequest.Parser, new[]{ "AccessToken", "Serial", "Auth" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.AddStationResponse), global::Circular2.AddStationResponse.Parser, new[]{ "Result", "Serial" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Circular2.ShareStationRequest), global::Circular2.ShareStationRequest.Parser, new[]{ "AccessToken", "Serial", "UserID", "Auth" }, null, null, null, null),
@@ -174,6 +182,8 @@ namespace Circular2 {
     [pbr::OriginalName("addStationResponse")] AddStationResponse = 153,
     [pbr::OriginalName("shareStationRequest")] ShareStationRequest = 154,
     [pbr::OriginalName("shareStationResponse")] ShareStationResponse = 155,
+    [pbr::OriginalName("stationRequest")] StationRequest = 156,
+    [pbr::OriginalName("stationResponse")] StationResponse = 157,
   }
 
   public enum Result {
@@ -615,6 +625,7 @@ namespace Circular2 {
       spspps_ = other.spspps_;
       utsMs_ = other.utsMs_;
       timelines_ = other.timelines_.Clone();
+      serial_ = other.serial_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -688,6 +699,17 @@ namespace Circular2 {
       get { return timelines_; }
     }
 
+    /// <summary>Field number for the "serial" field.</summary>
+    public const int SerialFieldNumber = 7;
+    private string serial_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Serial {
+      get { return serial_; }
+      set {
+        serial_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as VideoInitFrame);
@@ -707,6 +729,7 @@ namespace Circular2 {
       if (Spspps != other.Spspps) return false;
       if (UtsMs != other.UtsMs) return false;
       if(!timelines_.Equals(other.timelines_)) return false;
+      if (Serial != other.Serial) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -719,6 +742,7 @@ namespace Circular2 {
       if (Spspps.Length != 0) hash ^= Spspps.GetHashCode();
       if (UtsMs != 0UL) hash ^= UtsMs.GetHashCode();
       hash ^= timelines_.GetHashCode();
+      if (Serial.Length != 0) hash ^= Serial.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -753,6 +777,10 @@ namespace Circular2 {
         output.WriteUInt64(UtsMs);
       }
       timelines_.WriteTo(output, _repeated_timelines_codec);
+      if (Serial.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Serial);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -777,6 +805,9 @@ namespace Circular2 {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(UtsMs);
       }
       size += timelines_.CalculateSize(_repeated_timelines_codec);
+      if (Serial.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Serial);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -804,6 +835,9 @@ namespace Circular2 {
         UtsMs = other.UtsMs;
       }
       timelines_.Add(other.timelines_);
+      if (other.Serial.Length != 0) {
+        Serial = other.Serial;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -839,6 +873,10 @@ namespace Circular2 {
             timelines_.AddEntriesFrom(input, _repeated_timelines_codec);
             break;
           }
+          case 58: {
+            Serial = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -872,6 +910,7 @@ namespace Circular2 {
     public VideoFrame(VideoFrame other) : this() {
       frame_ = other.frame_;
       utsMs_ = other.utsMs_;
+      serial_ = other.serial_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -902,6 +941,17 @@ namespace Circular2 {
       }
     }
 
+    /// <summary>Field number for the "serial" field.</summary>
+    public const int SerialFieldNumber = 3;
+    private string serial_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Serial {
+      get { return serial_; }
+      set {
+        serial_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as VideoFrame);
@@ -917,6 +967,7 @@ namespace Circular2 {
       }
       if (Frame != other.Frame) return false;
       if (UtsMs != other.UtsMs) return false;
+      if (Serial != other.Serial) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -925,6 +976,7 @@ namespace Circular2 {
       int hash = 1;
       if (Frame.Length != 0) hash ^= Frame.GetHashCode();
       if (UtsMs != 0UL) hash ^= UtsMs.GetHashCode();
+      if (Serial.Length != 0) hash ^= Serial.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -946,6 +998,10 @@ namespace Circular2 {
         output.WriteRawTag(16);
         output.WriteUInt64(UtsMs);
       }
+      if (Serial.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Serial);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -959,6 +1015,9 @@ namespace Circular2 {
       }
       if (UtsMs != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(UtsMs);
+      }
+      if (Serial.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Serial);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -977,6 +1036,9 @@ namespace Circular2 {
       if (other.UtsMs != 0UL) {
         UtsMs = other.UtsMs;
       }
+      if (other.Serial.Length != 0) {
+        Serial = other.Serial;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -994,6 +1056,10 @@ namespace Circular2 {
           }
           case 16: {
             UtsMs = input.ReadUInt64();
+            break;
+          }
+          case 26: {
+            Serial = input.ReadString();
             break;
           }
         }
@@ -3860,6 +3926,7 @@ namespace Circular2 {
       result_ = other.result_;
       serial_ = other.serial_;
       uts_ = other.uts_;
+      timelines_ = other.timelines_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3901,6 +3968,16 @@ namespace Circular2 {
       }
     }
 
+    /// <summary>Field number for the "timelines" field.</summary>
+    public const int TimelinesFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::Circular2.Timeline> _repeated_timelines_codec
+        = pb::FieldCodec.ForMessage(34, global::Circular2.Timeline.Parser);
+    private readonly pbc::RepeatedField<global::Circular2.Timeline> timelines_ = new pbc::RepeatedField<global::Circular2.Timeline>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Circular2.Timeline> Timelines {
+      get { return timelines_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as StreamingStartResponse);
@@ -3917,6 +3994,7 @@ namespace Circular2 {
       if (Result != other.Result) return false;
       if (Serial != other.Serial) return false;
       if (Uts != other.Uts) return false;
+      if(!timelines_.Equals(other.timelines_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3926,6 +4004,7 @@ namespace Circular2 {
       if (Result != global::Circular2.Result.Success) hash ^= Result.GetHashCode();
       if (Serial.Length != 0) hash ^= Serial.GetHashCode();
       if (Uts != 0UL) hash ^= Uts.GetHashCode();
+      hash ^= timelines_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3951,6 +4030,7 @@ namespace Circular2 {
         output.WriteRawTag(24);
         output.WriteUInt64(Uts);
       }
+      timelines_.WriteTo(output, _repeated_timelines_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3968,6 +4048,7 @@ namespace Circular2 {
       if (Uts != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Uts);
       }
+      size += timelines_.CalculateSize(_repeated_timelines_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3988,6 +4069,7 @@ namespace Circular2 {
       if (other.Uts != 0UL) {
         Uts = other.Uts;
       }
+      timelines_.Add(other.timelines_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -4009,6 +4091,10 @@ namespace Circular2 {
           }
           case 24: {
             Uts = input.ReadUInt64();
+            break;
+          }
+          case 34: {
+            timelines_.AddEntriesFrom(input, _repeated_timelines_codec);
             break;
           }
         }
@@ -4356,12 +4442,24 @@ namespace Circular2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VideoBroken(VideoBroken other) : this() {
+      serial_ = other.serial_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VideoBroken Clone() {
       return new VideoBroken(this);
+    }
+
+    /// <summary>Field number for the "serial" field.</summary>
+    public const int SerialFieldNumber = 1;
+    private string serial_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Serial {
+      get { return serial_; }
+      set {
+        serial_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4377,12 +4475,14 @@ namespace Circular2 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Serial != other.Serial) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (Serial.Length != 0) hash ^= Serial.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4396,6 +4496,10 @@ namespace Circular2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (Serial.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Serial);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4404,6 +4508,9 @@ namespace Circular2 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (Serial.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Serial);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -4414,6 +4521,9 @@ namespace Circular2 {
     public void MergeFrom(VideoBroken other) {
       if (other == null) {
         return;
+      }
+      if (other.Serial.Length != 0) {
+        Serial = other.Serial;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4426,6 +4536,10 @@ namespace Circular2 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            Serial = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -4656,6 +4770,7 @@ namespace Circular2 {
       cameraName_ = other.cameraName_;
       serial_ = other.serial_;
       auth_ = other.auth_ != null ? other.auth_.Clone() : null;
+      online_ = other.online_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4744,6 +4859,9 @@ namespace Circular2 {
     /// <summary>Field number for the "ping" field.</summary>
     public const int PingFieldNumber = 8;
     private uint ping_;
+    /// <summary>
+    /// deprecated
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Ping {
       get { return ping_; }
@@ -4788,6 +4906,9 @@ namespace Circular2 {
     /// <summary>Field number for the "cameraName" field.</summary>
     public const int CameraNameFieldNumber = 12;
     private string cameraName_ = "";
+    /// <summary>
+    /// deprecated
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CameraName {
       get { return cameraName_; }
@@ -4818,6 +4939,17 @@ namespace Circular2 {
       }
     }
 
+    /// <summary>Field number for the "online" field.</summary>
+    public const int OnlineFieldNumber = 15;
+    private bool online_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Online {
+      get { return online_; }
+      set {
+        online_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Station);
@@ -4845,6 +4977,7 @@ namespace Circular2 {
       if (CameraName != other.CameraName) return false;
       if (Serial != other.Serial) return false;
       if (!object.Equals(Auth, other.Auth)) return false;
+      if (Online != other.Online) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4865,6 +4998,7 @@ namespace Circular2 {
       if (CameraName.Length != 0) hash ^= CameraName.GetHashCode();
       if (Serial.Length != 0) hash ^= Serial.GetHashCode();
       if (auth_ != null) hash ^= Auth.GetHashCode();
+      if (Online != false) hash ^= Online.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4934,6 +5068,10 @@ namespace Circular2 {
         output.WriteRawTag(114);
         output.WriteMessage(Auth);
       }
+      if (Online != false) {
+        output.WriteRawTag(120);
+        output.WriteBool(Online);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4983,6 +5121,9 @@ namespace Circular2 {
       }
       if (auth_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
+      }
+      if (Online != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5039,6 +5180,9 @@ namespace Circular2 {
           Auth = new global::Circular2.AuthStation();
         }
         Auth.MergeFrom(other.Auth);
+      }
+      if (other.Online != false) {
+        Online = other.Online;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5108,6 +5252,10 @@ namespace Circular2 {
               Auth = new global::Circular2.AuthStation();
             }
             input.ReadMessage(Auth);
+            break;
+          }
+          case 120: {
+            Online = input.ReadBool();
             break;
           }
         }
@@ -5394,6 +5542,326 @@ namespace Circular2 {
 
   }
 
+  public sealed partial class StationRequest : pb::IMessage<StationRequest> {
+    private static readonly pb::MessageParser<StationRequest> _parser = new pb::MessageParser<StationRequest>(() => new StationRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<StationRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Circular2.Circular2Reflection.Descriptor.MessageTypes[23]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StationRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StationRequest(StationRequest other) : this() {
+      accessToken_ = other.accessToken_;
+      serial_ = other.serial_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StationRequest Clone() {
+      return new StationRequest(this);
+    }
+
+    /// <summary>Field number for the "accessToken" field.</summary>
+    public const int AccessTokenFieldNumber = 1;
+    private string accessToken_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AccessToken {
+      get { return accessToken_; }
+      set {
+        accessToken_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "serial" field.</summary>
+    public const int SerialFieldNumber = 2;
+    private string serial_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Serial {
+      get { return serial_; }
+      set {
+        serial_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as StationRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(StationRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AccessToken != other.AccessToken) return false;
+      if (Serial != other.Serial) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (AccessToken.Length != 0) hash ^= AccessToken.GetHashCode();
+      if (Serial.Length != 0) hash ^= Serial.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (AccessToken.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(AccessToken);
+      }
+      if (Serial.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Serial);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (AccessToken.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AccessToken);
+      }
+      if (Serial.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Serial);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(StationRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.AccessToken.Length != 0) {
+        AccessToken = other.AccessToken;
+      }
+      if (other.Serial.Length != 0) {
+        Serial = other.Serial;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            AccessToken = input.ReadString();
+            break;
+          }
+          case 18: {
+            Serial = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class StationResponse : pb::IMessage<StationResponse> {
+    private static readonly pb::MessageParser<StationResponse> _parser = new pb::MessageParser<StationResponse>(() => new StationResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<StationResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Circular2.Circular2Reflection.Descriptor.MessageTypes[24]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StationResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StationResponse(StationResponse other) : this() {
+      result_ = other.result_;
+      station_ = other.station_ != null ? other.station_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StationResponse Clone() {
+      return new StationResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::Circular2.Result result_ = global::Circular2.Result.Success;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Circular2.Result Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "station" field.</summary>
+    public const int StationFieldNumber = 2;
+    private global::Circular2.Station station_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Circular2.Station Station {
+      get { return station_; }
+      set {
+        station_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as StationResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(StationResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      if (!object.Equals(Station, other.Station)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Result != global::Circular2.Result.Success) hash ^= Result.GetHashCode();
+      if (station_ != null) hash ^= Station.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Result != global::Circular2.Result.Success) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Result);
+      }
+      if (station_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Station);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Result != global::Circular2.Result.Success) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Result);
+      }
+      if (station_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Station);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(StationResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Result != global::Circular2.Result.Success) {
+        Result = other.Result;
+      }
+      if (other.station_ != null) {
+        if (station_ == null) {
+          Station = new global::Circular2.Station();
+        }
+        Station.MergeFrom(other.Station);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Result = (global::Circular2.Result) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (station_ == null) {
+              Station = new global::Circular2.Station();
+            }
+            input.ReadMessage(Station);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class AddStationRequest : pb::IMessage<AddStationRequest> {
     private static readonly pb::MessageParser<AddStationRequest> _parser = new pb::MessageParser<AddStationRequest>(() => new AddStationRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -5402,7 +5870,7 @@ namespace Circular2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Circular2.Circular2Reflection.Descriptor.MessageTypes[23]; }
+      get { return global::Circular2.Circular2Reflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5587,7 +6055,7 @@ namespace Circular2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Circular2.Circular2Reflection.Descriptor.MessageTypes[24]; }
+      get { return global::Circular2.Circular2Reflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5744,7 +6212,7 @@ namespace Circular2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Circular2.Circular2Reflection.Descriptor.MessageTypes[25]; }
+      get { return global::Circular2.Circular2Reflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5963,7 +6431,7 @@ namespace Circular2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Circular2.Circular2Reflection.Descriptor.MessageTypes[26]; }
+      get { return global::Circular2.Circular2Reflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
