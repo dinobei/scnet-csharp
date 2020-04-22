@@ -90,7 +90,7 @@ namespace ExampleCircular
                 (IMessage message) =>
                 {
                     VideoInitFrame videoInitFrame = (VideoInitFrame)message;
-                    Console.WriteLine("VideoInitFrame. uts=" + videoInitFrame.UtsMs);
+                    Console.WriteLine("(" + videoInitFrame.Serial + ") VideoInitFrame. uts=" + videoInitFrame.UtsMs);
                 });
             registry.Add(new VideoFrame(), VideoFrame.Parser, (int)PacketType.VideoFrame,
                 (IMessage message) =>

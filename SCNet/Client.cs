@@ -154,6 +154,7 @@ namespace SCNet
             IPEndPoint ipEndPoint = new IPEndPoint(ipAddr, port);
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
+            socket.ReceiveBufferSize = 5*1024*1024;
             IAsyncResult result = socket.BeginConnect(ipEndPoint, null, null);
 
             bool success = result.AsyncWaitHandle.WaitOne(5000, true);
@@ -210,12 +211,12 @@ namespace SCNet
             return header;
         }
 
-        private void SafeReceive(byte[] buffer, int length)
+        private void SafeReceive(byte[] buffer, int offset, int length)
         {
             int rcvTotal = 0;
             while (true)
             {
-                int rcv = socket.Receive(buffer, rcvTotal, length - rcvTotal, SocketFlags.None);
+                int rcv = socket.Receive(buffer, offset + rcvTotal, length - rcvTotal, SocketFlags.None);
                 if(rcv == 0)
                 {
                     socket.Close();
@@ -233,7 +234,7 @@ namespace SCNet
         public MessageHeader ReadMessageHeader()
         {
             byte[] mp = new byte[2];
-            SafeReceive(mp, 2);
+            SafeReceive(mp, 0, 2);
             
             if (mp[0] != MagicPacket[0] || mp[1] != MagicPacket[1])
             {
@@ -246,7 +247,7 @@ namespace SCNet
             int receivedHeaderComponent = 0;
             while (true)
             {
-                socket.Receive(headerBuffers, readingHeaderSize, 1, SocketFlags.None);
+                SafeReceive(headerBuffers, readingHeaderSize, 1);
                 
                 if((headerBuffers[readingHeaderSize++] & 0xFF) > 127) {
                     continue;
@@ -458,7 +459,7 @@ namespace SCNet
                     byte[] buf = new byte[messageHeader.dataSize];
                     if (messageHeader.dataSize != 0)
                     {
-                        SafeReceive(buf, messageHeader.dataSize);
+                        SafeReceive(buf, 0, messageHeader.dataSize);
                     }
 
                     switch (messageHeader.messageType)
@@ -487,6 +488,7 @@ namespace SCNet
                     if(e.ErrorCode == 1)
                     {
                         Console.WriteLine("Received invalid magic packet");
+                        stop = true;
                     }
                     else if(e.ErrorCode == 10060)
                     {
