@@ -149,9 +149,8 @@ namespace SCNet
 
         private void Connect(string ip, int port)
         {
-            IPHostEntry ipHost = Dns.GetHostEntry(ip);
-            IPAddress ipAddr = ipHost.AddressList[0];
-            IPEndPoint ipEndPoint = new IPEndPoint(ipAddr, port);
+            IPAddress addr = IPAddress.Parse(ip);
+            IPEndPoint ipEndPoint = new IPEndPoint(addr, port);
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
             socket.ReceiveBufferSize = 5*1024*1024;
