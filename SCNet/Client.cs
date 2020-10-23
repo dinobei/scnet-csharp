@@ -9,51 +9,9 @@ using System.Text;
 
 namespace SCNet
 {
-    static class Utils
-    {
-        public static void Clear<T>(this BlockingCollection<T> blockingCollection)
-        {
-            if (blockingCollection == null)
-            {
-                throw new ArgumentNullException("blockingCollection");
-            }
-
-            while (blockingCollection.Count > 0)
-            {
-                T item;
-                blockingCollection.TryTake(out item);
-            }
-        }
-    }
-
-    public struct MessageHeader
-    {
-        public int dataSize;
-        public int packetType;
-        public int messageType;
-        public int cryptType;
-        public int connectionID;
-    }
-
-    public enum MessageType
-    {
-        Protobuf = 0,
-        Rawbyte,
-    }
-
-    public struct MessageWrapper
-    {
-        public MessageType messageType;
-        public int packetType;
-        public object message; // byte[] or Message
-        public int length;
-    }
-
     public class Client
     {
         const int MagicPacketLength = 2;
-        const int HeaderElements = 5;
-        const int MaxPacketHeaderSize = 7 * HeaderElements;
 
         Socket socket;
         readonly byte[] MagicPacket = { (byte)'I', (byte)'J' };
@@ -61,7 +19,6 @@ namespace SCNet
         bool stop = false;
         bool isMainThreadStop = true;
         Thread mainThread;
-        Thread sendThread;
         Thread recvThread;
 
         public delegate void serverCallback();
@@ -77,9 +34,10 @@ namespace SCNet
         {
             IPAddress addr = IPAddress.Parse(ip);
             IPEndPoint ipEndPoint = new IPEndPoint(addr, port);
-            socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-
-            socket.ReceiveBufferSize = 5*1024*1024;
+            socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp)
+            {
+                ReceiveBufferSize = 5 * 1024 * 1024
+            };
             IAsyncResult result = socket.BeginConnect(ipEndPoint, null, null);
 
             bool success = result.AsyncWaitHandle.WaitOne(5000, true);
@@ -113,7 +71,6 @@ namespace SCNet
         {
             if (mainThread == null)
             {
-                Console.WriteLine("Already detached");
                 return false;
             }
             stop = true;
@@ -121,19 +78,6 @@ namespace SCNet
 
             mainThread.Interrupt();
             return true;
-        }
-
-        private MessageHeader MakeHeader(byte[] buffer)
-        {
-            MessageHeader header = new MessageHeader();
-            CodedInputStream codedInput = new CodedInputStream(buffer);
-            header.dataSize = codedInput.ReadInt32();
-            header.packetType = codedInput.ReadInt32();
-            header.messageType = codedInput.ReadInt32();
-            header.cryptType = codedInput.ReadInt32();
-            header.connectionID = codedInput.ReadInt32();
-            codedInput.Dispose();
-            return header;
         }
 
         private void SafeReceive(byte[] buffer, int offset, int length)
@@ -152,76 +96,7 @@ namespace SCNet
                 {
                     break;
                 }
-
             }
-        }
-
-        public MessageHeader ReadMessageHeader()
-        {
-            byte[] mp = new byte[2];
-            SafeReceive(mp, 0, 2);
-            
-            if (mp[0] != MagicPacket[0] || mp[1] != MagicPacket[1])
-            {
-                throw new SocketException(1);
-            }
-
-            byte[] headerBuffers = new byte[MaxPacketHeaderSize];
-
-            int readingHeaderSize = 0;
-            int receivedHeaderComponent = 0;
-            while (true)
-            {
-                SafeReceive(headerBuffers, readingHeaderSize, 1);
-                
-                if((headerBuffers[readingHeaderSize++] & 0xFF) > 127) {
-                    continue;
-                }
-
-                if(++receivedHeaderComponent == HeaderElements)
-                {
-                    break;
-                }
-            }
-
-            MessageHeader header = MakeHeader(headerBuffers);
-            return header;
-        }
-        public void Send(int packetType, byte[] message, int length=0)
-        {
-            MessageWrapper mw = new MessageWrapper
-            {
-                message = message,
-                length = length,
-                messageType = MessageType.Rawbyte,
-                packetType = packetType
-            };
-            queue.Add(mw);
-        }
-
-        public void Send(int packetType, string message)
-        {
-            MessageWrapper mw = new MessageWrapper
-            {
-                message = Encoding.UTF8.GetBytes(message),
-                length = message.Length,
-                messageType = MessageType.Rawbyte,
-                packetType = packetType
-            };
-            queue.Add(mw);
-        }
-
-        public void Send(IMessage message)
-        {
-            Registry registry = Registry.Instance;
-            MessageWrapper mw = new MessageWrapper
-            {
-                message = message,
-                length = message.CalculateSize(),
-                messageType = MessageType.Protobuf,
-                packetType = registry.GetType(message)
-            };
-            queue.Add(mw);
         }
 
         public void MainThread(string ip, int port)
@@ -243,8 +118,6 @@ namespace SCNet
                 }
                 
                 stop = false;
-                sendThread = new Thread(new ThreadStart(SendThread));
-                sendThread.Start();
                 recvThread = new Thread(new ThreadStart(RecvThread));
                 recvThread.Start();
 
@@ -253,7 +126,6 @@ namespace SCNet
 
                 try
                 {
-                    sendThread.Join();
                     recvThread.Join();
                 }
                 catch(ThreadInterruptedException e)
@@ -264,111 +136,10 @@ namespace SCNet
                 disconnectedCallback?.Invoke(this);
             }
 
-            //Console.WriteLine("MainThread finished");
             mainThread = null;
-            sendThread = null;
             recvThread = null;
 
             detachedCallback?.Invoke();
-        }
-
-        private BlockingCollection<MessageWrapper> queue = new BlockingCollection<MessageWrapper>(10);
-        public void SendThread()
-        {
-            Utils.Clear<MessageWrapper>(queue);
-            while(!stop)
-            {
-                try
-                {
-                    MessageWrapper messageWrapper;
-                    if (!queue.TryTake(out messageWrapper, 1000))
-                    {
-                        continue; // send timeout
-                    }
-                    switch (messageWrapper.messageType)
-                    {
-                        case MessageType.Protobuf:
-                            {
-                                IMessage message = (IMessage)messageWrapper.message;
-                                int size = MagicPacketLength + MaxPacketHeaderSize + messageWrapper.length;
-                                byte[] buf = new byte[size];
-                                CodedOutputStream co = new CodedOutputStream(buf);
-                                co.WriteRawTag(MagicPacket[0], MagicPacket[1]);
-                                co.WriteInt32(messageWrapper.length);
-                                co.WriteInt32(messageWrapper.packetType);
-                                co.WriteInt32((int)MessageType.Protobuf);
-                                co.WriteInt32(0);
-                                co.WriteInt32(0);
-
-                                message.WriteTo(co);
-                                co.Flush();
-
-                                try
-                                {
-                                    socket.Send(buf, (int)co.Position, SocketFlags.None);
-                                }
-                                catch (Exception e)
-                                {
-                                    Console.WriteLine(e.ToString());
-                                }
-                                finally
-                                {
-                                    co.Dispose();
-                                }
-
-                            }
-                            break;
-                        case MessageType.Rawbyte:
-                            {
-                                byte[] message = (byte[])messageWrapper.message;
-                                int size = MagicPacketLength + MaxPacketHeaderSize + messageWrapper.length;
-                                byte[] buf = new byte[size];
-                                CodedOutputStream co = new CodedOutputStream(buf);
-                                co.WriteRawTag(MagicPacket[0], MagicPacket[1]);
-                                co.WriteInt32(messageWrapper.length);
-                                co.WriteInt32(messageWrapper.packetType);
-                                co.WriteInt32((int)MessageType.Rawbyte);
-                                co.WriteInt32(0);
-                                co.WriteInt32(0);
-                                //co.WriteBytes(ByteString.CopyFrom(message));
-                                Buffer.BlockCopy(message, 0, buf, (int)co.Position, messageWrapper.length);
-
-                                co.Flush();
-
-                                try
-                                {
-                                    socket.Send(buf, (int)co.Position + messageWrapper.length, SocketFlags.None);
-                                }
-                                catch (SocketException e)
-                                {
-                                    if (e.ErrorCode == 10053)
-                                    {
-                                        stop = true;
-                                    }
-                                }
-                                catch (Exception e)
-                                {
-                                    Console.WriteLine(e.ToString());
-                                }
-                                finally
-                                {
-                                    co.Dispose();
-                                }
-                            }
-                            break;
-                        default:
-                            Console.WriteLine("Invalid message type: " + messageWrapper.messageType);
-                            break;
-                    }
-                }
-                catch(ThreadInterruptedException)
-                {
-                    stop = true;
-                    break;
-                }
-            }
-
-            //Console.WriteLine("SendThread finished");
         }
 
         public void RecvThread()
@@ -380,33 +151,34 @@ namespace SCNet
             {
                 try
                 {
-                    MessageHeader messageHeader = ReadMessageHeader();
-                    byte[] buf = new byte[messageHeader.dataSize];
-                    if (messageHeader.dataSize != 0)
+                    const int headLength = MagicPacketLength + 4 + 2;
+                    byte[] headBuf = new byte[headLength];
+                    SafeReceive(headBuf, 0, headLength);
+                    if(headBuf[0] != MagicPacket[0] || headBuf[1] != MagicPacket[1])
                     {
-                        SafeReceive(buf, 0, messageHeader.dataSize);
+                        throw new SocketException(1);
                     }
+                    int packetSize = headBuf[2] << 24 | headBuf[3] << 16 | headBuf[4] << 8 | headBuf[5];
+                    int headerSize = headBuf[6] << 8 | headBuf[7];
+                    byte[] packetBuf = new byte[packetSize];
+                    SafeReceive(packetBuf, 0, packetSize);
 
-                    switch (messageHeader.messageType)
+                    Scnet.Header header = Scnet.Header.Parser.ParseFrom(packetBuf, 0, headerSize);
+                    IMessage message = registry.GetProtoMessage(header.PacketType, packetBuf, headerSize, packetSize-headerSize);
+                    if(header.ResCb>0)
                     {
-                        case (int)MessageType.Protobuf:
-                            {
-                                IMessage message = registry.GetProtoMessage(messageHeader.packetType, buf, messageHeader.dataSize);
-                                Registry.ProtobufCallback cb = registry.GetProtobufCallback(messageHeader.packetType);
-                                cb(message);
-                            }
-                            break;
-                        case (int)MessageType.Rawbyte:
-                            {
-                                Registry.RawbyteCallback cb = registry.GetRawbyteCallback(messageHeader.packetType);
-                                cb(buf, messageHeader.dataSize);
-                            }
-                            break;
-                        default:
-                            Console.WriteLine("Received invalid messageType : " + messageHeader.messageType);
-                            break;
+                        DedicatedCallback dedicatedCallback = dedicatedCallbackMap[header.ResCb];
+                        bool? result = dedicatedCallback?.Invoke(header, message);
+                        if(result.HasValue ? result.Value:false)
+                        {
+                            Registry.SinkCallback sinkCallback = registry.GetProtobufCallback(header.PacketType);
+                            sinkCallback?.Invoke(header, message);
+                        }
                     }
-
+                    else {
+                        Registry.SinkCallback sinkCallback = registry.GetProtobufCallback(header.PacketType);
+                        sinkCallback?.Invoke(header, message);
+                    }
                 }
                 catch (SocketException e)
                 {
@@ -442,7 +214,59 @@ namespace SCNet
                     Console.WriteLine(e.ToString());
                 }
             }
-            //Console.WriteLine("RecvThread finished");
+        }
+
+        public delegate bool DedicatedCallback(Scnet.Header header, IMessage message);
+        Dictionary<int, DedicatedCallback> dedicatedCallbackMap = new Dictionary<int, DedicatedCallback>();
+        int callbackKeyRef = 1000;
+
+        public void Send(Scnet.Header _header, IMessage message, DedicatedCallback callback)
+        {
+            Registry registry = Registry.Instance;
+            uint packetType = registry.GetType(message);
+            Scnet.Header header = new Scnet.Header
+            {
+                PacketType = (uint)packetType
+            };
+            if(callback != null)
+            {
+                header.ReqCb = callbackKeyRef;
+                dedicatedCallbackMap[callbackKeyRef] = callback;
+                callbackKeyRef += 1;
+            }
+            
+            if (_header != null)
+            {
+                header.ResCb = _header.ReqCb;
+            }
+
+            int packetSize = header.CalculateSize() + message.CalculateSize();
+            int headerSize = header.CalculateSize();
+            byte[] buf = new byte[MagicPacketLength + 4 + 2 + packetSize];
+            CodedOutputStream co = new CodedOutputStream(buf);
+            co.WriteRawTag(MagicPacket[0], MagicPacket[1]);
+            co.WriteRawTag((byte)((packetSize << 24) & 0xFF));
+            co.WriteRawTag((byte)((packetSize << 16) & 0xFF));
+            co.WriteRawTag((byte)((packetSize << 8) & 0xFF));
+            co.WriteRawTag((byte)(packetSize & 0xFF));
+            co.WriteRawTag((byte)((headerSize << 8) & 0xFF));
+            co.WriteRawTag((byte)(headerSize & 0xFF));
+            header.WriteTo(co);
+            message.WriteTo(co);
+            co.Flush();
+            try
+            {
+                socket.Send(buf, (int)co.Position, SocketFlags.None);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            finally
+            {
+                co.Dispose();
+            }
+
         }
     }
 }

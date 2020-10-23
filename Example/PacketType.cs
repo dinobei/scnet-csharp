@@ -24,12 +24,9 @@ namespace Example {
     static PacketTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFwYWNrZXRfdHlwZS5wcm90bxIHZXhhbXBsZSq6AQoKUGFja2V0VHlwZRIP",
-            "CgtwYWNrZXRUeXBlMRAAEg8KC3BhY2tldFR5cGUyEAESDwoLcGFja2V0VHlw",
-            "ZTMQAhIPCgtwYWNrZXRUeXBlNBADEhQKEGFycmF5TWVzc2FnZVR5cGUQBBIQ",
-            "CgxpbWFnZVJlcXVlc3QQBRIRCg1pbWFnZVJlc3BvbnNlEAYSFQoRY2FtZXJh",
-            "TGlzdFJlcXVlc3QQBxIWChJjYW1lcmFMaXN0UmVzcG9uc2UQCEIgChFuZXQu",
-            "aWpvb24uZXhhbXBsZUILUGFja2V0VHlwZTJiBnByb3RvMw=="));
+            "ChFwYWNrZXRfdHlwZS5wcm90bxIHZXhhbXBsZSo6CgpQYWNrZXRUeXBlEggK",
+            "BHBpbmcQABIQCgxkdW1teVBhY2tldDEQARIQCgxkdW1teVBhY2tldDIQAkIk",
+            "ChFjb20uc2NuZXQuZXhhbXBsZUIMU0NOZXRFeGFtcGxlugIAYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Example.PacketType), }, null, null));
@@ -39,15 +36,9 @@ namespace Example {
   }
   #region Enums
   public enum PacketType {
-    [pbr::OriginalName("packetType1")] _1 = 0,
-    [pbr::OriginalName("packetType2")] _2 = 1,
-    [pbr::OriginalName("packetType3")] _3 = 2,
-    [pbr::OriginalName("packetType4")] _4 = 3,
-    [pbr::OriginalName("arrayMessageType")] ArrayMessageType = 4,
-    [pbr::OriginalName("imageRequest")] ImageRequest = 5,
-    [pbr::OriginalName("imageResponse")] ImageResponse = 6,
-    [pbr::OriginalName("cameraListRequest")] CameraListRequest = 7,
-    [pbr::OriginalName("cameraListResponse")] CameraListResponse = 8,
+    [pbr::OriginalName("ping")] Ping = 0,
+    [pbr::OriginalName("dummyPacket1")] DummyPacket1 = 1,
+    [pbr::OriginalName("dummyPacket2")] DummyPacket2 = 2,
   }
 
   #endregion
