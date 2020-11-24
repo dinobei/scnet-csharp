@@ -161,8 +161,8 @@ namespace SCNet
                     int packetSize = headBuf[2] << 24 | headBuf[3] << 16 | headBuf[4] << 8 | headBuf[5];
                     int headerSize = headBuf[6] << 8 | headBuf[7];
                     byte[] packetBuf = new byte[packetSize];
-                    SafeReceive(packetBuf, 0, packetSize);
 
+                    if(packetSize > 0) SafeReceive(packetBuf, 0, packetSize);
                     Scnet.Header header = Scnet.Header.Parser.ParseFrom(packetBuf, 0, headerSize);
                     IMessage message = registry.GetProtoMessage(header.PacketType, packetBuf, headerSize, packetSize-headerSize);
                     if(header.ResCb>0)
